@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程列表</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>课程列表</h1>
+        <input type="text" id="searchInput" placeholder="搜索课程...">
+        <button onclick="searchCourses()">搜索</button>
+    </header>
+    <main id="course-list">
+        <!-- Course items will be populated here -->
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCourses();
+        });
+
+        function loadCourses() {
+            // Pseudocode: Fetch courses from the server and display them
+        }
+
+        function displayCourses(courses) {
+            const listElement = document.getElementById('course-list');
+            // ... display logic here
+        }
+
+        function searchCourses() {
+            const searchQuery = document.getElementById('searchInput').value;
+            // Pseudocode: Perform search with the server
+        }
+    </script>
+</body>
+</html>
+    
